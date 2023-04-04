@@ -2,38 +2,48 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Counter from "../components/Counter";
+import pingwind from "../assets/pingwind.jpg";
+import { Image } from "astro:assets";
 ---
 
 <Layout title="Welcome to Astro.">
-  <main>
-    <h1>Welcome to <span class="text-gradient">Astro</span></h1>
-    <p class="instructions">
+  <main class="container flex flex-col gap-8 p-10">
+    <Image
+      src={pingwind}
+      alt="Pinguin on a rock"
+      width={800}
+      class="object-cover rounded-xl shadow-xl"
+    />
+    <h1 class="text-2xl font-bold">
+      Welcome to <span class="text-orange font-black">Pingwind</span>!
+    </h1>
+    <p>
       To get started, open the directory <code>src/pages</code> in your project.<br
       />
-      <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+      <strong>Code Challenge:</strong> Tweak the "Welcome to Pingwind" message above.
     </p>
-    <h2>Counter with SolidJS</h2>
+    <h2 class="text-lg font-bold">Counter with SolidJS</h2>
     <Counter client:load />
-    <ul role="list" class="link-card-grid">
+    <ul role="list" class="flex flex-row gap-5 flex-wrap">
       <Card
         href="https://docs.astro.build/"
-        title="Documentation"
+        title="Astro docs"
         body="Learn how Astro works and explore the official API docs."
       />
       <Card
-        href="https://astro.build/integrations/"
-        title="Integrations"
-        body="Supercharge your project with new frameworks and libraries."
+        href="https://solidjs.com"
+        title="SolidJS docs"
+        body="Explore the official SolidJS docs."
       />
       <Card
-        href="https://astro.build/themes/"
-        title="Themes"
-        body="Explore a galaxy of community-built starter themes."
+        href="https://daisyui.com/docs/themes/"
+        title="DasiyUI Themes"
+        body="Explore starter themes."
       />
       <Card
-        href="https://astro.build/chat/"
-        title="Community"
-        body="Come say hi to our amazing Discord community. ❤️"
+        href="https://unocss.dev"
+        title="UnoCSS docs"
+        body="Explore the official Unocss docs."
       />
     </ul>
   </main>
