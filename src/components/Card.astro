@@ -9,12 +9,12 @@ const { href, title, body } = Astro.props;
 ---
 
 <li class="card bg-base-200 max-w-150">
-  <a class="card-body" href={href}>
+  <a class="card-body" href={href} target="_blank">
     <h2 class="card-title">
       {title}
       <span>&rarr;</span>
     </h2>
-    <p class="btn btn-outline">
+    <p class="btn btn-primary btn-outline">
       {body}
     </p>
   </a>
