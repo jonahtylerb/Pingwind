@@ -7,13 +7,6 @@ import { Image } from "astro:assets";
 
 <Layout title="Welcome to Astro.">
   <main class="container flex flex-col gap-8 p-10">
-    <Image
-      transition:name="img"
-      src={pingwind}
-      alt="Pinguin on a rock"
-      width={800}
-      class="object-cover rounded-xl shadow-xl"
-    />
     <h1 class="text-2xl font-bold underline decoration-primary">
       Welcome to <span class="text-primary font-black">Pingwind</span>!
     </h1>
@@ -23,9 +16,16 @@ import { Image } from "astro:assets";
       <strong>Code Challenge:</strong> Tweak the "Welcome to Pingwind" message above.
     </p>
     <h2 class="text-lg font-bold">Counter with SolidJS</h2>
+    <Image
+      transition:name="img"
+      src={pingwind}
+      alt="Pinguin on a rock"
+      width={800}
+      class="object-cover rounded-xl shadow-xl"
+    />
     <ul role="list" class="flex flex-row gap-5 flex-wrap">
       <Card
-        href="/new"
+        href="/"
         title="Astro docs"
         body="Learn how Astro works and explore the official API docs."
       />

@@ -6,6 +6,8 @@ export interface Props {
 const { title } = Astro.props;
 
 import "@fontsource/montserrat";
+
+import { ViewTransitions } from "astro:transitions";
 ---
 
 <!DOCTYPE html>
@@ -16,6 +18,7 @@ import "@fontsource/montserrat";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <ViewTransitions />
   </head>
   <body class="text-base family-montserrat">
     <slot />
