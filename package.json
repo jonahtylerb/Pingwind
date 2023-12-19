@@ -10,16 +10,15 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/solid-js": "latest",
+    "@astrojs/solid-js": "^3.0.2",
     "@fontsource/montserrat": "latest",
-    "astro": "latest",
-    "solid-js": "latest"
+    "astro": "^3",
+    "solid-js": "^1.4.3",
+    "unocss-preset-daisy": "6"
   },
   "devDependencies": {
     "@unocss/reset": "latest",
-    "daisyui": "latest",
-    "unocss": "latest",
-    "unocss-preset-daisy": "latest"
+    "daisyui": "^3.9.4",
+    "unocss": "latest"
   }
 }
-

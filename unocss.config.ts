@@ -20,9 +20,7 @@ export default defineConfig({
       },
     }),
     presetTagify(),
-    presetDaisy({
-      themes: ["forest"],
-    }),
+    presetDaisy(),
   ],
   transformers: [transformerVariantGroup(), transformerDirectives()],
   rules: [
